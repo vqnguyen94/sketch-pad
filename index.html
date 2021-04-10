@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>PixelPad</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>PixelPad</h1>
+        <div id="main-container">
+            <!-- Left -->
+            <div id="left-of-grid">
+                <div>
+                    <div id="create" class="left-buttons">Create grid</div>
+                    <div id="clear" class="left-buttons">Clear all</div>
+                </div>
+
+                <div>
+                    <h2>Color Picker</h2>
+                    <label for="color">
+                        <div id="color" class="left-buttons"><input type="color" value="#000000"></div>
+                    </label>
+                </div>         
+                
+                <div>
+                    <h2>Pen Effects</h2>
+                    <div id="random" class="left-buttons effects">Random colors</div>
+                    <div id="fade" class="left-buttons effects">Fade to black</div>
+                </div>    
+            </div>
+
+            <!-- Grid / Center -->
+            <div id="grid-container">
+                <div id="grid"></div>
+            </div>
+
+            <!-- Right -->
+            <div id="right-of-grid">
+                <div id="dimensions">
+                    <h2>Current Dimensions:</h2>
+                    <div id="number">16x16</div>        
+                </div>
+
+                <div id="grid-toggle">
+                    <div id="toggle" class="right">Toggle gridlines</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
